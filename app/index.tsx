@@ -1,12 +1,23 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
 
 const Index = () => {
   return (
-    <View>
-      <Text>Umesh Gayashan</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>Umesh Gayashan</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Index
+const styles = StyleSheet.create({
+  container: {
+    // you can add container styles here if needed
+  },
+  text: {
+    color: 'red',
+    fontSize: 32,
+    fontWeight: 'bold',
+  },
+});
+
+export default Index;
